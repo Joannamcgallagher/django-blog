@@ -28,9 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-joannamcgall-djangoblog-rvsi9asbn47.ws-eu111.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-joannamcgall-djangoblog-rvsi9asbn47.ws-eu111.gitpod.io','.herokuapp.com', '8000-joannamcgall-djangoblog-7zg81p7ink7.ws-eu114.gitpod.io',]
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_summernote',
     'blog',
+    'about',
 ]
 
 MIDDLEWARE = [
